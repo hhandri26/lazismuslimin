@@ -1,0 +1,324 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    color: #013329;
+}
+
+nav {
+    .container-nav {
+        position: relative;
+        background-color: #ffffff;
+        top: -7px;
+
+        .navbar-collapse {
+            margin-left: 10px;
+        }
+
+        .navbar-brand {
+            img {
+                width: 64px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: #013329;
+
+                &.active {
+                    font-weight: bold;
+                    color: #013329;
+                }
+            }
+        }
+    }
+}
+
+//Header
+header {
+    padding: 300px 0;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    height: 100vh;
+
+    h1 {
+        font-size: 58px;
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .btn-donation-now {
+        background-color: #D4A61D;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #E5C153;
+            color: #ffffff;
+        }
+    }
+}
+
+//Statistic
+.section-stats {
+    margin-top: -170px;
+
+    .stats-detail {
+        padding-top: 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        ;
+        padding-left: 20px;
+    }  
+}
+
+//Donasi
+.section-donations {
+    margin-top: 170px;
+    margin-bottom: 40px;
+    
+    .section-donations-heading {
+        h2 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .section-all-donations {
+        margin-top: 40px;
+
+        .card-donation {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            height: 580px;
+
+            .donation-image {
+                img {
+                    height: 224px;
+                    width: 100%;
+                    background-size: cover;
+                }
+            }
+
+            h4 {
+                margin: 30px 20px 20px 20px;
+            }
+            p {
+                margin: 0 20px 20px 20px;
+                font-size: 16px;
+            }
+
+            .donation-button {
+                .btn-donation {
+                    background-color: #D4A61D;
+                    color: #ffffff;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        background-color: #E5C153;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .section-acara {
+        margin-top: 0px;
+        padding-top: 122px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        background-color: #013329;
+
+        .section-acara-heading {
+            margin-bottom: 70px;
+
+            h2 {
+                font-size: 38px;
+                color: #ffffff;
+            }
+
+            p {
+                font-size: 18px;
+                color: #ffffff;
+            }
+        }
+
+        .card {
+            .btn-donation {
+                background-color: #D4A61D;
+                color: #ffffff;
+                margin-bottom: 20px;
+
+                &:hover {
+                    background-color: #E5C153;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* display 3 */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-right.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(33.333%);
+            }
+
+            .carousel-inner .carousel-item-left.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-33.333%);
+            }
+        }
+
+        .carousel-inner .carousel-item-right,
+        .carousel-inner .carousel-item-left {
+            transform: translateX(0);
+        }
+    }
+
+    //Tentang
+    .section-about {
+        margin-top: 120px;
+        margin-bottom: 50px;
+
+        p {
+            font-size: 18px;
+        }
+
+        .section-acara-heading {
+            margin-bottom: 70px;
+
+            h2 {
+                font-size: 38px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .visi-misi {
+            margin-top: 40px;
+
+            p {
+                font-size: 16px;
+                color: #01332970;
+            }
+        } 
+    }
+
+    //Contact
+    .section-contact {
+        padding-bottom: 50px;
+        
+        iframe {
+            margin-top: 0;
+            width: 100%;
+            height: 100% ;
+        }
+
+        .btn-email {
+            background-color: #D4A61D;
+            color: #ffffff;
+            margin-bottom: 20px;
+
+            &:hover {
+                background-color: #E5C153;
+                color: #ffffff;
+            }
+        }
+
+        i {
+            color: #013301;
+        }     
+    }
+
+
+    .section-details-donation {
+        margin-top: 110px;
+        min-height: 100vh;
+
+        .breadcrumb {
+            background-color: transparent;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb-item {
+            &.active {
+            font-weight: bold;
+            color: #013301;
+            }
+        }
+
+        .card-details {
+            padding: 20px;
+
+        }
+
+        .btn-donation {
+            background-color: #D4A61D;
+            color: #ffffff;
+            margin-bottom: 20px;
+
+            &:hover {
+                background-color: #E5C153;
+                color: #ffffff;
+            }
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }
+
+    .section-success {
+        height: 100vh;
+        
+        h1 {
+            font-weight: bold;
+            font-size: 54px;
+            margin-top: 70px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 18;
+            color: #545454;
+        }
+
+        .btn-home-page {
+            background-color: #D4A61D;
+            color: #ffffff;
+            margin-bottom: 20px;
+
+            &:hover {
+                background-color: #E5C153;
+                color: #ffffff;
+            }
+        }
+    }
+
+    

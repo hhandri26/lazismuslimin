@@ -1,0 +1,407 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  color: #013329;
+}
+
+nav .container-nav {
+  position: relative;
+  background-color: #ffffff;
+  top: -7px;
+}
+
+nav .container-nav .navbar-collapse {
+  margin-left: 10px;
+}
+
+nav .container-nav .navbar-brand img {
+  width: 150px;
+}
+
+nav .container-nav .navbar-nav .nav-link {
+  color: #013329;
+}
+
+nav .container-nav .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #013329;
+}
+
+header {
+  padding: 300px 0;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+header h1 {
+  font-size: 58px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+header .btn-donation-now {
+  background-color: #D4A61D;
+  color: #ffffff;
+}
+
+header .btn-donation-now:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+.section-stats {
+  margin-top: -170px;
+}
+
+.section-stats .stats-detail {
+  padding-top: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 20px;
+}
+
+.section-donations {
+  margin-top: 170px;
+  margin-bottom: 40px;
+}
+
+.section-donations .section-donations-heading h2 {
+  font-size: 38px;
+}
+
+.section-donations .section-donations-heading p {
+  font-size: 18px;
+}
+
+.section-donations .section-all-donations {
+  margin-top: 40px;
+}
+
+.section-donations .section-all-donations .card-donation {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  height: 580px;
+}
+
+.section-donations .section-all-donations .card-donation .donation-image img {
+  height: 224px;
+  width: 100%;
+  background-size: cover;
+}
+
+.section-donations .section-all-donations .card-donation h4 {
+  margin: 30px 20px 20px 20px;
+}
+
+.section-donations .section-all-donations .card-donation p {
+  margin: 0 20px 20px 20px;
+  font-size: 16px;
+}
+
+.section-donations .section-all-donations .card-donation .donation-button .btn-donation {
+  background-color: #D4A61D;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-donations .section-all-donations .card-donation .donation-button .btn-donation:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+.section-acara {
+  margin-top: 0px;
+  padding-top: 122px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: #013329;
+  /* display 3 */
+}
+
+.section-acara .section-acara-heading {
+  margin-bottom: 70px;
+}
+
+.section-acara .section-acara-heading h2 {
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.section-acara .section-acara-heading p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.section-acara .card .btn-donation {
+  background-color: #D4A61D;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-acara .card .btn-donation:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section-acara .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .section-acara .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.section-acara .carousel-inner .carousel-item.active,
+.section-acara .carousel-inner .carousel-item-next,
+.section-acara .carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .section-acara .carousel-inner .carousel-item-right.active,
+  .section-acara .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(33.333%);
+            transform: translateX(33.333%);
+  }
+  .section-acara .carousel-inner .carousel-item-left.active,
+  .section-acara .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-33.333%);
+            transform: translateX(-33.333%);
+  }
+}
+
+.section-acara .carousel-inner .carousel-item-right,
+.section-acara .carousel-inner .carousel-item-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.section-about {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.section-about p {
+  font-size: 18px;
+}
+
+.section-about .section-acara-heading {
+  margin-bottom: 70px;
+}
+
+.section-about .section-acara-heading h2 {
+  font-size: 38px;
+}
+
+.section-about .section-acara-heading p {
+  font-size: 18px;
+}
+
+.section-about .visi-misi {
+  margin-top: 40px;
+}
+
+.section-about .visi-misi p {
+  font-size: 16px;
+  color: #01332970;
+}
+
+.section-contact {
+  padding-bottom: 50px;
+}
+
+.section-contact iframe {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-contact .btn-email {
+  background-color: #D4A61D;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-contact .btn-email:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+.section-contact i {
+  color: #013301;
+}
+
+.section-details-donation {
+  margin-top: 110px;
+  min-height: 100vh;
+}
+
+.section-details-donation .breadcrumb {
+  background-color: transparent;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.section-details-donation .breadcrumb-item.active {
+  font-weight: bold;
+  color: #013301;
+}
+
+.section-details-donation .card-details {
+  padding: 20px;
+}
+
+.section-details-donation .btn-donation {
+  background-color: #D4A61D;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-details-donation .btn-donation:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+.section-details-donation label {
+  font-size: 14px;
+}
+
+.section-success {
+  height: 100vh;
+}
+
+.section-success h1 {
+  font-weight: bold;
+  font-size: 54px;
+  margin-top: 70px;
+}
+
+.section-success p {
+  font-weight: 300;
+  font-size: 18;
+  color: #545454;
+}
+
+.section-success .btn-home-page {
+  background-color: #D4A61D;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section-success .btn-home-page:hover {
+  background-color: #E5C153;
+  color: #ffffff;
+}
+
+
+.section-details-donation .card-details .caution {
+  background-color: #013301;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.section-details-donation .card-details .caution small {
+  color: #ffffff;
+}
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer-bs {
+  background-color: #3c3d41;
+padding: 60px 40px;
+color: rgba(255,255,255,1.00);
+margin-bottom: 20px;
+border-bottom-right-radius: 6px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 6px;
+}
+.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
+.footer-bs .footer-brand h2 { margin:0px 0px 10px; }
+.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+.footer-bs .footer-nav ul.pages { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.pages li { padding:5px 0px;}
+.footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
+.footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+.footer-bs .footer-nav h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom:10px;
+}
+
+.footer-bs .footer-nav ul.list { list-style:none; padding:0px; }
+.footer-bs .footer-nav ul.list li { padding:5px 0px;}
+.footer-bs .footer-nav ul.list a { color:rgba(255,255,255,0.80); }
+.footer-bs .footer-nav ul.list a:hover { color:rgba(255,255,255,0.60); text-decoration:none; }
+
+.footer-bs .footer-social ul { list-style:none; padding:0px; }
+.footer-bs .footer-social h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+.footer-bs .footer-social li { padding:5px 4px;}
+.footer-bs .footer-social a { color:rgba(255,255,255,1.00);}
+.footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
+
+.footer-bs .footer-ns h4 {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom:10px;
+}
+.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+
+@media (min-width: 768px) {
+.footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
+}
+/*# sourceMappingURL=main.css.map */
