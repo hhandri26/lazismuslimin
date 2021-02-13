@@ -75,4 +75,12 @@ class TransactionModels extends Model
     public static function add_details($dat){
         DB::table('t_transaction_detail')->insert($dat);
     }
+
+    public static function add_donatur($dat){
+        DB::table('tbl_donatur')->insert($dat);
+    }
+
+    public static function add_laporan($dat){
+        DB::table('tbl_laporan')->insert($dat);
+    }
 }

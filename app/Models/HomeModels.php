@@ -160,6 +160,13 @@ class HomeModels extends Model
 										'type'	=>$data1['type'],
                                         'created_at'=>$adddate
                                 ]);
+				$insert2 = DB::table('tbl_donasi')
+						->where('id_donasi',$id)
+						->update([
+								'judul_donasi'	  	=>$data1['title'],
+								'deskripsi'   	=>$data1['desc'],                                      
+								'gambar_donasi'	=>$data1['img']
+							]);
 				$get_id = $id;
 				$delete2 =DB::table('t_product_gallery')->where('id_product', $id)->delete();
              
@@ -176,7 +183,13 @@ class HomeModels extends Model
                                         'created_at'=>$adddate
 								]);
                 $get_id 	=DB::table('t_post_project')->where('created_at',$adddate)->pluck('id')->first();
-                
+                $insert2 = DB::table('tbl_donasi')
+							->insert([
+                                        'id_donasi'   	=>$get_id,
+                                        'judul_donasi'	  	=>$data1['title'],
+                                        'deskripsi'   	=>$data1['desc'],                                      
+										'gambar_donasi'	=>$data1['img']
+								]);
 
 			}
 			
@@ -232,6 +245,13 @@ class HomeModels extends Model
 										'type'	=>$data1['type'],
                                         'created_at'=>$adddate
                                 ]);
+				$insert2 = DB::table('tbl_acara')
+							->where('id_acara',$id)
+							->update([
+									'judul_acara'	 =>$data1['title'],
+									'deskripsi'   	=>$data1['desc'],                                      
+									'gambar_acara'	=>$data1['img']
+								]);
 				$get_id = $id;
 				$delete2 =DB::table('t_product_gallery')->where('id_product', $id)->delete();
              
@@ -249,7 +269,13 @@ class HomeModels extends Model
 								]);
                 $get_id 	=DB::table('t_post_project')->where('created_at',$adddate)->pluck('id')->first();
                 
-
+				$insert2 = DB::table('tbl_acara')
+				->insert([
+					'id_acara'	  	=>$get_id,
+						'judul_acara'	  	=>$data1['title'],
+						'deskripsi'   	=>$data1['desc'],                                      
+						'gambar_acara'	=>$data1['img']
+					]);
 			}
 			
 			if(!empty($data3)){

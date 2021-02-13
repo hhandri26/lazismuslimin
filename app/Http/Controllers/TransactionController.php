@@ -51,6 +51,28 @@ class TransactionController extends Controller{
 
               array_push($detail,$send);
               //TransactionModels::add_details($dat);
+
+              // insert tbl_donatur
+              // insert tbl_laporan
+              $donatur = array(
+                'nominal_donasi'  => floatval($this->request->donation),
+                'nama_lengkap'    =>$this->request->name,
+                'email'           =>$this->request->email,
+                'no_telephone'    =>$this->request->no_hp,
+                'pesan'           =>$this->request->message,
+              );
+              $laporan = array(
+                'no_transaksi'    =>$nomor_transaction,
+                'nominal_donasi'  => floatval($this->request->donation),
+                'nama_lengkap'    =>$this->request->name,
+                'email'           =>$this->request->email,
+                'no_telephone'    =>$this->request->no_hp,
+                'pesan'           =>$this->request->message,
+                'jenis_donasi'    =>$this->request->id_donasi,
+                'status'          =>'pending',
+              );
+              TransactionModels::add_donatur($donatur);
+              TransactionModels::add_laporan($laporan);
             
             //$shipping['id']=$donation->nomor_transaksi;
             //$shipping['price']= floatval($this->request->amount_shipping);
@@ -480,6 +502,25 @@ class TransactionController extends Controller{
              'id_donasi' => $this->request->id_donasi
           
          ]);
+
+         $donatur = array(
+          'nominal_donasi'  => floatval($this->request->donation),
+          'nama_lengkap'    =>$this->request->name,
+          'email'           =>$this->request->email,
+          'no_telephone'    =>$this->request->no_hp,
+          'pesan'           =>$this->request->message,
+        );
+        $laporan = array(
+          'no_transaksi'    =>$nomor_transaction,
+          'nominal_donasi'  => floatval($this->request->donation),
+          'nama_lengkap'    =>$this->request->name,
+          'email'           =>$this->request->email,
+          'no_telephone'    =>$this->request->no_hp,
+          'jenis_donasi'    =>$this->request->id_donasi,
+          'status'          =>'pending',
+        );
+        TransactionModels::add_donatur($donatur);
+        TransactionModels::add_laporan($laporan);
       
 
         if ($donation){

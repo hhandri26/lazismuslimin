@@ -6,7 +6,7 @@
     <div class="box-header with-border">
         <div class="row">
             <div class="col-md-10"><h4 class="box-title">Add @if($id>0) Edit @endif Product</h4></div>
-            <input type="hidden" id="url_back" value="{{route('product')}}">
+            <input type="hidden" id="url_back" value="{{route('acara')}}">
             <input type="hidden" id="id" value="{{ $id }}">
         </div>
     </div>
